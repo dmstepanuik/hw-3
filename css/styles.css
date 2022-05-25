@@ -5,13 +5,43 @@
   --third-title-color: #757575;
   --forth-title-color: #212121;
   --accent-color: #2196f3;
+  --typical-margin: 20px;
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--main-title-color);
   font-style: normal;
   font-size: 14px;
 }
+
+.container {
+  width: 1200;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid red;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -25,6 +55,13 @@ body {
   margin: -1px;
 }
 /* ----------------HEADER------------- */
+
+.header {
+  background-color: var(--main-title-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .list {
   list-style: none;
 }
@@ -114,9 +151,11 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-title-color);
+  padding: 200px 452px 280px 452px;
 }
 .hero-btn {
   background: var(--accent-color);
+  margin-bottom: var(--typical-margin);
 }
 .work-btn-current {
   font-family: inherit;
