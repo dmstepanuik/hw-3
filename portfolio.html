@@ -15,99 +15,104 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header-nav">
-        <a class="logo link" href="lang=en">Web<span class="logo-accent">Studio</span></a>
+      <div class="container">
+        <nav class="header-nav">
+          <a class="logo link" href="lang=en">Web<span class="logo-accent">Studio</span></a>
+          <ul class="list">
+            <li class="header-item">
+              <a class="nav-link link" href="./index.html">Студия</a>
+            </li>
+            <li class="header-item">
+              <a class="nav-link link current" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="header-item"><a class="nav-link link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
         <ul class="list">
-          <li class="header-item">
-            <a class="nav-link link" href="./index.html">Студия</a>
+          <li class="header-item mailto header-link">
+            <a href="mailto:info@devstudio.com" class="header-contact-link link"
+              >info@devstudio.com</a
+            >
           </li>
-          <li class="header-item">
-            <a class="nav-link link current" href="./portfolio.html">Портфолио</a>
+          <li class="header-item-tel header-link">
+            <a href="tel:+380961111111" class="header-contact-link link">+38 096 111 11 11</a>
           </li>
-          <li class="header-item"><a class="nav-link link" href="#">Контакты</a></li>
         </ul>
-      </nav>
-      <ul class="list">
-        <li class="header-item mailto header-link">
-          <a href="mailto:info@devstudio.com" class="header-contact-link link"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="header-item-tel header-link">
-          <a href="tel:+380961111111" class="header-contact-link link">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main class="portfolio">
       <section class="work">
-        <h1 class="works-title">Портфолио</h1>
-        <ul class="work-list">
-          <li class="work-item">
-            <button type="button" class="work-item-btn-current link">Все</button>
-          </li>
-          <li class="work-item">
-            <button type="button" class="work-item-btn-link">Веб-сайты</button>
-          </li>
-          <li class="work-item">
-            <button type="button" class="work-item-btn-link">Приложения</button>
-          </li>
-          <li class="work-item">
-            <button type="button" class="work-item-btn-link">Дизайн</button>
-          </li>
-          <li class="work-item">
-            <button type="button" class="work-item-btn-link">Маркетинг</button>
-          </li>
-        </ul>
-        <ul class="list-project">
-          <li class="project-item">
-            <img src="./img/img4.jpg" alt="проект 1" />
-            <h2 class="project-title">Технокряк</h2>
-            <p class="project-test">Веб-сайт</p>
-          </li>
-          <li class="project-item">
-            <img src="./img/img5.jpg" alt="проект2" />
-            <h2 class="project-title">Постер <span lang="eg">New Orlean vs Golden Star</span></h2>
-            <p class="project-text">Дизайн</p>
-          </li>
-          <li class="project-item">
-            <img src="./img/img6.jpg" alt="проект3" />
-            <h2 class="project-title">Ресторан <span lang="en">Seafood</span></h2>
-            <p class="project-text">Приложение</p>
-          </li>
-          <li class="project-item">
-            <img src="./img/img7.jpg" alt="проект4" />
-            <h2 class="project-title">Проект <span lang="en">Prime</span></h2>
-            <p class="project-text">Маркетинг</p>
-          </li>
-          <li class="project-item">
-            <img src="./img/img8.jpg" alt="проект5" />
-            <h2 class="project-title">Проект <span lang="en">Boxes</span></h2>
-            <p class="project-text">Приложение</p>
-          </li>
-          <li class="project-item">
-            <img src="./img/img9.jpg" alt="проект6" />
-            <h2 class="project-title" lang="en">Inspiration has no Borders</h2>
-            <p class="project-text">Веб-сайт</p>
-          </li>
-          <li class="project-item">
-            <img src="./img/img10.jpg" alt="проект7" />
-            <h2 class="project-title">Издание <span lang="en">Limited Edition</span></h2>
-            <p class="project-text">Дизайн</p>
-          </li>
-          <li class="project-item">
-            <img src="./img/img11.jpg" alt="ролект8" />
-            <h2 class="project-title">Проект <span lang="en">LAB</span></h2>
-            <p class="project-text">Маркетинг</p>
-          </li>
-          <li class="project-item">
-            <img src="./img/img12.jpg" alt="проект9" />
-            <h2 class="project-title" lang="en">Growing Business</h2>
-            <p class="project-text">Приложение</p>
-          </li>
-        </ul>
+        <div class="container">
+          <h1 class="works-title">Портфолио</h1>
+          <ul class="work-list">
+            <li class="work-item">
+              <button type="button" class="work-item-btn-current link">Все</button>
+            </li>
+            <li class="work-item">
+              <button type="button" class="work-item-btn-link">Веб-сайты</button>
+            </li>
+            <li class="work-item">
+              <button type="button" class="work-item-btn-link">Приложения</button>
+            </li>
+            <li class="work-item">
+              <button type="button" class="work-item-btn-link">Дизайн</button>
+            </li>
+            <li class="work-item">
+              <button type="button" class="work-item-btn-link">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="list-project">
+            <li class="project-item">
+              <img src="./img/img4.jpg" alt="проект 1" />
+              <h2 class="project-title">Технокряк</h2>
+              <p class="project-test">Веб-сайт</p>
+            </li>
+            <li class="project-item">
+              <img src="./img/img5.jpg" alt="проект2" />
+              <h2 class="project-title">Постер <span lang="eg">New Orlean vs Golden Star</span></h2>
+              <p class="project-text">Дизайн</p>
+            </li>
+            <li class="project-item">
+              <img src="./img/img6.jpg" alt="проект3" />
+              <h2 class="project-title">Ресторан <span lang="en">Seafood</span></h2>
+              <p class="project-text">Приложение</p>
+            </li>
+            <li class="project-item">
+              <img src="./img/img7.jpg" alt="проект4" />
+              <h2 class="project-title">Проект <span lang="en">Prime</span></h2>
+              <p class="project-text">Маркетинг</p>
+            </li>
+            <li class="project-item">
+              <img src="./img/img8.jpg" alt="проект5" />
+              <h2 class="project-title">Проект <span lang="en">Boxes</span></h2>
+              <p class="project-text">Приложение</p>
+            </li>
+            <li class="project-item">
+              <img src="./img/img9.jpg" alt="проект6" />
+              <h2 class="project-title" lang="en">Inspiration has no Borders</h2>
+              <p class="project-text">Веб-сайт</p>
+            </li>
+            <li class="project-item">
+              <img src="./img/img10.jpg" alt="проект7" />
+              <h2 class="project-title">Издание <span lang="en">Limited Edition</span></h2>
+              <p class="project-text">Дизайн</p>
+            </li>
+            <li class="project-item">
+              <img src="./img/img11.jpg" alt="ролект8" />
+              <h2 class="project-title">Проект <span lang="en">LAB</span></h2>
+              <p class="project-text">Маркетинг</p>
+            </li>
+            <li class="project-item">
+              <img src="./img/img12.jpg" alt="проект9" />
+              <h2 class="project-title" lang="en">Growing Business</h2>
+              <p class="project-text">Приложение</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
+      <div class="container">
       <a class="footer-link" href="lang=en">Web<span class="footer-title">Studio</span></a>
       <address class="contacts">
         <ul class="contacts-list">
@@ -128,6 +133,7 @@
             <a href="tel:+380961111111" class="contacts-link link">+38 096 111 11 11</a>
           </li>
         </ul>
+        </div>
       </address>
     </footer>
   </body>

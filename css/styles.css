@@ -58,8 +58,8 @@ body {
 
 .header {
   background-color: var(--main-title-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .list {
@@ -121,9 +121,12 @@ body {
 /* --------------------HERO------------ */
 .hero {
   background: var(--second-title-color);
+  padding: 200px 200px;
 }
+
 .porfolio {
   background: var(--main-title-color);
+  padding: 20px;
 }
 .project-item {
   list-style: none;
@@ -151,12 +154,14 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-title-color);
-  padding: 200px 452px 280px 452px;
 }
 .hero-btn {
   background: var(--accent-color);
-  margin-bottom: var(--typical-margin);
+  margin: 0 auto;
+  display: block;
+  margin-top: 50px;
 }
+
 .work-btn-current {
   font-family: inherit;
   cursor: pointer;
@@ -189,6 +194,11 @@ body {
   color: var(--btn-color);
 }
 /* ---------CHARACTERISTICS----------- */
+
+.characteristics {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
 .characteristics-title {
   font-weight: 700;
   font-size: 14px;
@@ -196,9 +206,11 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--forth-title-color);
+  margin-bottom: 10px;
 }
 .characteristics-list {
   list-style: none;
+  margin-left: 30px;
 }
 .characteristics-item {
   font-weight: 400;
@@ -206,6 +218,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--third-title-color);
+  margin-bottom: 94px;
 }
 /* ---------ABOUT---------------- */
 .about {
@@ -253,10 +266,14 @@ body {
 }
 .team {
   background-color: #f5f4fa;
+  margin-bottom: 50px;
+  padding-bottom: 94px;
 }
 /* -------------FOOTER----------------- */
 .footer {
   background-color: var(--second-title-color);
+  padding-top: 20px;
+  margin-bottom: 9px;
 }
 .footer-title {
   color: var(--main-title-color);
