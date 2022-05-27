@@ -36,7 +36,8 @@ body {
 
 .container {
   width: 1200;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   outline: 1px solid red;
@@ -56,6 +57,11 @@ body {
 }
 /* ----------------HEADER------------- */
 
+.main-nav{
+  display: flex;
+  align-items: center;
+}
+
 .header {
   background-color: var(--main-title-color);
   padding-top: 20px;
@@ -64,8 +70,20 @@ body {
 
 .list {
   list-style: none;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+}
+.header-item {
+margin-right: 50px;
+}
+.header-nav .iteam + .iteam{
+  margin-left: 50px;
 }
 
+/* .header-nav .item:(:last-child){
+  margin-right: 50px;
+} */
 .logo {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -94,7 +112,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-title-color);
-}
+  }
+
 .header-item-tel {
   font-weight: 500;
   font-size: 14px;
@@ -154,12 +173,16 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-title-color);
+  margin-bottom: 30px;
 }
 .hero-btn {
   background: var(--accent-color);
+  border-radius: 4px;
+  padding: 10px; 32px;
+  min-width: 200px;
   margin: 0 auto;
   display: block;
-  margin-top: 50px;
+  
 }
 
 .work-btn-current {
@@ -206,6 +229,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--forth-title-color);
+  margin-top: 0px;
   margin-bottom: 10px;
 }
 .characteristics-list {
@@ -218,6 +242,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--third-title-color);
+  margin-top: 0px;
   margin-bottom: 94px;
 }
 /* ---------ABOUT---------------- */
@@ -257,7 +282,10 @@ body {
 }
 .team-list {
   list-style: none;
-}
+  }
+  .team-list > .item:nth-child(3n){
+    background-color: #F5F4FA;
+  }
 .team-item {
   font-size: 16px;
   line-height: 1.19;
@@ -266,8 +294,8 @@ body {
 }
 .team {
   background-color: #f5f4fa;
-  margin-bottom: 50px;
-  padding-bottom: 94px;
+  margin-top: 0px;
+  margin-bottom: 94px;
 }
 /* -------------FOOTER----------------- */
 .footer {
