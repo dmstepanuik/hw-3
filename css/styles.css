@@ -222,9 +222,13 @@ margin-right: 50px;
   line-height: 1.62;
   color: var(--forth-title-color);
   border-radius: 4px;
+  height: 38px;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding: 6px 22px;
     
 }
-
 
 .work-item-btn:hover,
 .work-item-btn:focus {
@@ -277,10 +281,6 @@ margin-right: 50px;
   margin-bottom: 20px;
   margin-left: 24px;
 }
-
-
-
-
 
 /* ---------CHARACTERISTICS----------- */
 
