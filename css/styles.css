@@ -225,16 +225,9 @@ margin-right: 50px;
     
 }
 
-.work-btn-current-link:hover,
-.work-btn-current-link:focus,
-.work-btn-current-link:active {
-  font-family: inherit
-  background-color: var(--accent-color);
-  color: var(--main-title-color);
-  }
 
-.work-item-btn-link:hover,
-.work-item-btn-link:focus {
+.work-item-btn:hover,
+.work-item-btn:focus {
   font-family: inherit;
   background-color: var(--accent-color);
   color: var(--main-title-color)
