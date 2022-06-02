@@ -43,18 +43,7 @@ body {
   outline: 1px solid red;
 }
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
+
 /* ----------------HEADER------------- */
 
 .header-nav{
@@ -195,7 +184,8 @@ margin-right: 50px;
 .hero-btn {
   background: var(--accent-color);
   border-radius: 4px;
-  padding: 10px; 32px;
+  border: none;
+  padding: 10px 32px;
   min-width: 200px;
   margin: 0 auto;
   display: block;
@@ -206,9 +196,30 @@ margin-right: 50px;
   display: flex;
   list-style: none;
   justify-content: center;
-  padding-bottom: 56px;
+  padding-bottom: 50px;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  overflow:hidden;
+}
+
+.work-item:not(last-child) {
+margin-right: 8px;
+}
+li >.all{
+  color: var(--main-title-color);
+  background-color: var(--second-title-color);
+
+}
 .work-btn-current {
   font-family: inherit;
   cursor: pointer;
@@ -247,15 +258,16 @@ margin-right: 50px;
 }
 
 /* portfolio projects */
+
+
 .project-item {
   background-color: var(--main-title-color);
   border: 1px solid var(--main-title-color)
-  width: 370px;
-  height: 404px;
-  flex-basis: calc(100 / 3 - 30px);
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
 }
+
 .list-project {
   display: flex;
   flex-wrap: wrap;
@@ -289,7 +301,7 @@ margin-right: 50px;
 
 .characteristics {
   padding-top: 94px;
-  padding-bottom: 47px;
+  padding-bottom: 94px;
 }
 .characteristics-title {
   font-weight: 700;
@@ -326,12 +338,20 @@ margin-right: 50px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--forth-title-color);
-  margin-bottom: 50px;
+  padding-bottom: 94px;
 }
+.about-item:first-child{
+  margin-right: 30px;
+}
+
+.about-item:not(:last-child){
+  margin-right: 30px;
+}
+
 .about-list {
   list-style: none;
   display: flex;
-}
+  }
 .work-list {
   list-style: none;
 }
@@ -343,8 +363,16 @@ margin-right: 50px;
 /* ---------------TEAM--------------- */
 
 .team-title {
-  text-align: center
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--forth-title-color);
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
+
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -354,22 +382,43 @@ margin-right: 50px;
   color: var(--forth-title-color);
 }
 .team-name {
+  font-family: inherit;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.17;
+  text-align: center;
   letter-spacing: 0.03em;
   color: var(--forth-title-color);
 }
 .team-list {
   list-style: none;
   display: flex;
-  }
-  .team-list > .item:nth-child(3n){
-    }
+}
+  
+.text{
+font-family:inherit;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 0.03em;
+color:var(--third-title-color);
+}
+
+.team-item:first-child{
+margin-right: 30px;
+}
+.team-item:not(:last-child){
+margin-right: 30px;
+}
+
 .team-item {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  background-color: var(--btn-color);
  }
 .team {
   background-color: #f5f4fa;
@@ -381,13 +430,14 @@ margin-right: 50px;
   background-color: var(--second-title-color);
   }
 .footer-title {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
   color: var(--main-title-color);
-  padding-top: 60px;
-  padding-bottom: 161px;
-}
-.footer-link:hover,
-.footer-link:focus {
-  color: var(--accent-color);
 }
 .footer-link {
   font-family: 'Raleway', sans-serif;
@@ -398,8 +448,10 @@ margin-right: 50px;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--accent-color);
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
-
 .contacts-item {
   list-style: none;
   text-decoration: none;
@@ -409,7 +461,8 @@ margin-right: 50px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
-}
+  padding-bottom: 9px;}
+
 .contacts-link {
   text-decoration: none;
   font-weight: 400;
@@ -417,4 +470,4 @@ margin-right: 50px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-}
+  padding-bottom: 60px;}
