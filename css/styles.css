@@ -222,8 +222,6 @@ body {
 li > .all {
   color: var(--main-title-color);
   background-color: var(--second-title-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .work-btn-current {
