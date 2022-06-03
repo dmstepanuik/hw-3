@@ -216,11 +216,16 @@ body {
 
 .work-item:not(last-child) {
   margin-right: 8px;
+  padding-top: 94px;
+  padding-bottom: 56px;
 }
 li > .all {
   color: var(--main-title-color);
   background-color: var(--second-title-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+
 .work-btn-current {
   font-family: inherit;
   cursor: pointer;
@@ -266,7 +271,7 @@ li > .all {
   margin-left: 30px;
   margin-bottom: 30px;
 }
-.porfolio-project {
+.portfolio-project {
   border-bottom: 1px solid var(--fifth-title-color);
   border-left: 1px solid var(--fifth-title-color);
   border-right: 1px solid var(--fifth-title-color);
