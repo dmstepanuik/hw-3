@@ -6,6 +6,7 @@
   --forth-title-color: #212121;
   --accent-color: #2196f3;
   --typical-margin: 20px;
+  --fifth-title-color: #eee;
 }
 
 p,
@@ -41,6 +42,10 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   outline: 1px solid red;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* ----------------HEADER------------- */
@@ -148,6 +153,19 @@ body {
   background: var(--main-title-color);
   padding: 20px;
 }
+.works-title,
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  overflow: hidden;
+}
 .project-item {
   list-style: none;
 }
@@ -194,19 +212,6 @@ body {
   list-style: none;
   justify-content: center;
   padding-bottom: 50px;
-}
-
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(100%);
-  overflow: hidden;
 }
 
 .work-item:not(last-child) {
@@ -256,10 +261,15 @@ li > .all {
 
 .project-item {
   background-color: var(--main-title-color);
-  border: 1px solid var(--main-title-color)
+
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
+}
+.porfolio-project {
+  border-bottom: 1px solid var(--fifth-title-color);
+  border-left: 1px solid var(--fifth-title-color);
+  border-right: 1px solid var(--fifth-title-color);
 }
 
 .list-project {
@@ -278,6 +288,7 @@ li > .all {
   margin-bottom: 4px;
   margin-left: 24px;
 }
+
 .project-text {
   font-weight: 400;
   font-size: 16px;
