@@ -286,10 +286,7 @@ li > .all {
 
 /* ---------CHARACTERISTICS----------- */
 
-.characteristics {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 .characteristics-title {
   font-weight: 700;
   font-size: 14px;
@@ -317,6 +314,9 @@ li > .all {
 }
 
 /* ---------ABOUT---------------- */
+ .about{
+   padding-bottom: 94px;
+ }
 .about-title {
   font-weight: 700;
   font-size: 36px;
@@ -324,8 +324,10 @@ li > .all {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--forth-title-color);
-  padding-bottom: 94px;
+  margin-bottom: 50px;
+   
 }
+
 .about-item:first-child {
   margin-right: 30px;
 }
@@ -340,6 +342,10 @@ li > .all {
 }
 
 /* ---------------TEAM--------------- */
+.box-team-name{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 .team-title {
   font-weight: 700;
@@ -348,7 +354,6 @@ li > .all {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--forth-title-color);
-  padding-top: 94px;
   padding-bottom: 50px;
 }
 
@@ -369,6 +374,7 @@ li > .all {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--forth-title-color);
+  margin-bottom: 10px;
 }
 .team-list {
   list-style: none;
@@ -407,6 +413,9 @@ li > .all {
 /* -------------FOOTER----------------- */
 .footer {
   background-color: var(--second-title-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
 }
 .footer-title {
   font-family: 'Raleway', sans-serif;
@@ -428,7 +437,6 @@ li > .all {
   text-decoration: none;
   color: var(--accent-color);
   display: block;
-  padding-top: 60px;
   padding-bottom: 20px;
 }
 .contacts-item {
@@ -450,5 +458,4 @@ li > .all {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  padding-bottom: 60px;
-}
+  }
