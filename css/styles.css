@@ -41,7 +41,7 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
+  
 }
 .section {
   padding-top: 94px;
@@ -354,7 +354,7 @@ li > .all {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--forth-title-color);
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .title {
@@ -437,7 +437,7 @@ li > .all {
   text-decoration: none;
   color: var(--accent-color);
   display: block;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .contacts-item {
   list-style: none;
@@ -448,11 +448,14 @@ li > .all {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
-  padding-bottom: 9px;
+}
+
+.contacts-item:not(:last-child){
+  margin-bottom: 9px;
 }
 
 .contacts-link {
-  text-decoration: none;
+  text-decoration: none;co
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
